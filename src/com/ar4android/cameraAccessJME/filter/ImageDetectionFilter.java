@@ -115,7 +115,7 @@ public final class ImageDetectionFilter {
 		// Convert the scene to grayscale.
 		Imgproc.cvtColor(src, mGraySrc, Imgproc.COLOR_RGBA2GRAY);
 
-		mGraySrc = src.clone();
+		
 		// Detect the same features, compute their descriptors,
 		// and match the scene descriptors to reference descriptors.
 		mFeatureDetector.detect(mGraySrc, mSceneKeypoints);
